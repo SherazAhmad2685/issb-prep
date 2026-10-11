@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import 'package:fl_chart/fl_chart.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/providers/providers.dart';
-import '../../core/models/models.dart';
 
 class ProgressScreen extends StatefulWidget {
   const ProgressScreen({super.key});
