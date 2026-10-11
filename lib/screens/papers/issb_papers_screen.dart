@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/providers/providers.dart';
+import '../../core/models/models.dart';
 import 'paper_screen.dart';
 
 class IssbPapersScreen extends StatelessWidget {
@@ -125,8 +126,8 @@ class IssbPapersScreen extends StatelessWidget {
     );
   }
 
-  Widget _resultTile(BuildContext context, r) {
-    final pct = (r as dynamic).percentage.toStringAsFixed(0);
+  Widget _resultTile(BuildContext context, PaperResult r) {
+    final pct = r.percentage.toStringAsFixed(0);
     final color = r.percentage >= 60
         ? AppTheme.success
         : r.percentage >= 40

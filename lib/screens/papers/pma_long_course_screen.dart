@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/providers/providers.dart';
+import '../../core/models/models.dart';
 import 'paper_screen.dart';
 
 class PmaLongCourseScreen extends StatefulWidget {
